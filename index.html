@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>CONVIEN GmbH</title>
+  <meta name="description" content=" ">
+
+  <link rel="stylesheet" href="css/flexgrid.css">
+  <link rel="stylesheet" href="css/image.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/feature.css">
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/ScrollDown.js"></script>
+  <script src="js/modal.js"></script>
+
+</head>
+
+
+  <body>
+
+    <div class="landingPageContainer" style="background-image: url('')">
+    <header class="headerContainer">
+  <div class="topLeft">
+    <a href="#"><div class="imgScale "></div></a> <!--individuell-->
+  </div>
+  <div class="topRight">
+    <div class="languagePicker" id="changeLanguage">
+      <span>DE</span>
+      <span class="verticalLine">|</span>
+      <span class="languagePickerUnselected">EN</span>
+    </div>
+    <div class="imgScale iconMenu icon40" onclick="menuOpen()"></div>
+  </div>
+  <div class="modal" id="modalMenu">
+    <div class="modalMenuContent">
+      <div class="imgScale iconMenuClose icon40" onclick="menuClose()"></div>
+      <div class="alignCenterMenu" style="min-height: 100%;">
+        <div class="imgScale logoConvien" style="margin-bottom: 20px;"></div>
+        <span class="menuTexts"><a href="#">About us</a></span>
+        <span class="menuTexts"><a href="#">Contact</a></span>
+        <span class="menuTexts"><a href="#">Imprint</a></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <style type="text/css">
+  .headerContainer {
+    display: none;
+  }
+  .footerContainer {
+    display: none;
+  }
+  .landingPageContainer {
+    background-color: var(--darkGrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .indexContainer {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pagename {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-family: "Quicksand";
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+  }
+  .pagename:hover {
+    text-decoration: underline;
+  }
+</style>
+<div class="indexContainer">
+  <a class="pagename" href="convien_easy.html"><span><b>CONVIEN</b> EASY</span><a>
+  <a class="pagename" href="convien_byoobe.html"><span><b>CONVIEN</b> BYOOBE</span><a>
+  <a class="pagename" href="convien_venue.html"><span><b>CONVIEN</b> VENUE</span><a>
+</div>
+
+    <div>
+
+    <footer class="footerContainer">
+
+  <div class="footerBottom">
+    © 2017 CONVIEN GmbH - all rights reserved
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

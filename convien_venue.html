@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>CONVIEN VENUE</title>
+  <meta name="description" content=" ">
+
+  <link rel="stylesheet" href="css/flexgrid.css">
+  <link rel="stylesheet" href="css/image.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/feature.css">
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/ScrollDown.js"></script>
+  <script src="js/modal.js"></script>
+
+</head>
+
+
+  <body>
+
+    <div class="landingPageContainer" style="background-image: url('img/backgroundVenue.jpg')">
+    <header class="headerContainer">
+  <div class="topLeft">
+    <a href="#"><div class="imgScale logoVenue"></div></a> <!--individuell-->
+  </div>
+  <div class="topRight">
+    <div class="languagePicker" id="changeLanguage">
+      <span>DE</span>
+      <span class="verticalLine">|</span>
+      <span class="languagePickerUnselected">EN</span>
+    </div>
+    <div class="imgScale iconMenu icon40" onclick="menuOpen()"></div>
+  </div>
+  <div class="modal" id="modalMenu">
+    <div class="modalMenuContent">
+      <div class="imgScale iconMenuClose icon40" onclick="menuClose()"></div>
+      <div class="alignCenterMenu" style="min-height: 100%;">
+        <div class="imgScale logoConvien" style="margin-bottom: 20px;"></div>
+        <span class="menuTexts"><a href="#">About us</a></span>
+        <span class="menuTexts"><a href="#">Contact</a></span>
+        <span class="menuTexts"><a href="#">Imprint</a></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="contentContainer alignCenter">
+  <h1 class="contentTitle">your corporate travel management</h1>
+  <h2 class="contentSubtitle">Take off for the next level of travel management</h2>
+  <div class="featureContainerCenter">
+
+    
+      
+      <div class="tooltip imgScale iconMoneySavingW icon100" style="cursor: pointer;" onclick="gotoMoneySaving();">
+        <span class="tooltiptext"><b>ECONOMIZE</b><br/>YOUR TOTAL COST OF TRAVEL</span>
+      </div>
+      
+    
+      
+      <div class="tooltip imgScale iconTravelInfoW icon100" style="cursor: pointer;" onclick="gotoTravelInfo();">
+        <span class="tooltiptext"><b>MANAGE</b><br/>YOUR TRAVEL SMARTLY</span>
+      </div>
+      
+    
+      
+      <div class="tooltip imgScale iconMeetingW icon100" style="cursor: pointer;" onclick="gotoMeeting();">
+        <span class="tooltiptext"><b>EASE</b><br/>YOUR MEETING ARRANGEMENTS</span>
+      </div>
+      
+    
+      
+      <div class="tooltip imgScale iconEcoFriendlyW icon100" style="cursor: pointer;" onclick="gotoEcoFriendly();">
+        <span class="tooltiptext"><b>ECO-FRIENDLY</b><br/>WITH GREEN TRAVEL</span>
+      </div>
+      
+    
+      
+      <div class="tooltip imgScale iconSecurityW icon100" style="cursor: pointer;" onclick="gotoSecurity();">
+        <span class="tooltiptext"><b>ENSURE</b><br/>COMPLIANCE WITH YOUR CORPORATE TRAVEL POLICIES</span>
+      </div>
+      
+    
+      <a href="page.contact.linkto" class="tooltip imgScale iconRequestY icon100">
+        <span class="tooltiptext"><b>ORDER IT NOW</b><br/></span>
+      </a>
+
+  </div>
+</div>
+
+
+  <div id="MoneySaving" class="featureContainer">
+  <div class="featureTitleContainer">
+    <div class="horizontalLeft">
+        <hr class="hr" style="color: var(--convienYellow)">
+    </div>
+    <div class="titleContainer">
+        <div class="imgScale icon100 iconMoneySaving" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: var(--convienYellow)">
+            <h2 style="margin-bottom: 10px;"><b>Economize</b></h2>
+            <h4>YOUR TOTAL COST OF TRAVEL</h4>
+        </div>
+    </div>
+    <div class="horizontalRight">
+        <hr class="hr" style="color: var(--convienYellow)">
+    </div>
+  </div>
+  <div class="featureOuterContainer Grid Grid--cols-2" style="background-color: var(--convienYellow);">
+    <div class="Grid-cell imgScale featureMoneySaving">
+      <div class="featureInnenContainerUp">
+        <div class="featureContentTitle"><h2></h2></div>
+        <div class="featureContent"><p></p></div>
+      </div>
+    </div>
+    <div class="Grid-cell imgScale ">
+      <div class="featureInnenContainerDown">
+        <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
+        <div class="featureContent"><p>All necessary functionalities of the sophisticated CONVIEN are included in the CONVIEN EASY version. Your data is stored in a cloud safeguarding a permanent availability for the manager and all travelers involved in the organization of a meeting. Thus using CONVIEN EASY allows you to arrange travels and meetings and cut down on the Total-Cost-of-Travel up to 30% with a smart system.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="TravelInfo" class="featureContainer">
+  <div class="featureTitleContainer">
+    <div class="horizontalLeft">
+        <hr class="hr" style="color: var(--darkGrey)">
+    </div>
+    <div class="titleContainer">
+        <div class="imgScale icon100 iconTravelInfo" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: var(--darkGrey)">
+            <h2 style="margin-bottom: 10px;"><b>Manage</b></h2>
+            <h4>YOUR TRAVEL SMARTLY</h4>
+        </div>
+    </div>
+    <div class="horizontalRight">
+        <hr class="hr" style="color: var(--darkGrey)">
+    </div>
+  </div>
+  <div class="featureOuterContainer Grid Grid--cols-2" style="background-color: var(--darkGrey);">
+    <div class="Grid-cell imgScale ">
+      <div class="featureInnenContainerUp">
+        <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
+        <div class="featureContent"><p>All necessary functionalities of the sophisticated CONVIEN are included in the CONVIEN EASY version. Your data is stored in a cloud safeguarding a permanent availability for the manager and all travelers involved in the organization of a meeting. Thus using CONVIEN EASY allows you to arrange travels and meetings and cut down on the Total-Cost-of-Travel up to 30% with a smart system.</p></div>
+      </div>
+    </div>
+    <div class="Grid-cell imgScale featureTravelInfo">
+      <div class="featureInnenContainerDown">
+        <div class="featureContentTitle"><h2></h2></div>
+        <div class="featureContent"><p></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="Meeting" class="featureContainer">
+  <div class="featureTitleContainer">
+    <div class="horizontalLeft">
+        <hr class="hr" style="color: var(--convienRed)">
+    </div>
+    <div class="titleContainer">
+        <div class="imgScale icon100 iconMeeting" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: var(--convienRed)">
+            <h2 style="margin-bottom: 10px;"><b>Ease</b></h2>
+            <h4>YOUR MEETING ARRANGEMENTS</h4>
+        </div>
+    </div>
+    <div class="horizontalRight">
+        <hr class="hr" style="color: var(--convienRed)">
+    </div>
+  </div>
+  <div class="featureOuterContainer Grid Grid--cols-2" style="background-color: var(--convienRed);">
+    <div class="Grid-cell imgScale featureMeeting">
+      <div class="featureInnenContainerUp">
+        <div class="featureContentTitle"><h2></h2></div>
+        <div class="featureContent"><p></p></div>
+      </div>
+    </div>
+    <div class="Grid-cell imgScale ">
+      <div class="featureInnenContainerDown">
+        <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
+        <div class="featureContent"><p>All necessary functionalities of the sophisticated CONVIEN are included in the CONVIEN EASY version. Your data is stored in a cloud safeguarding a permanent availability for the manager and all travelers involved in the organization of a meeting. Thus using CONVIEN EASY allows you to arrange travels and meetings and cut down on the Total-Cost-of-Travel up to 30% with a smart system.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="EcoFriendly" class="featureContainer">
+  <div class="featureTitleContainer">
+    <div class="horizontalLeft">
+        <hr class="hr" style="color: var(--convienGreen)">
+    </div>
+    <div class="titleContainer">
+        <div class="imgScale icon100 iconEcoFriendly" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: var(--convienGreen)">
+            <h2 style="margin-bottom: 10px;"><b>Eco-Friendly</b></h2>
+            <h4>WITH GREEN TRAVEL</h4>
+        </div>
+    </div>
+    <div class="horizontalRight">
+        <hr class="hr" style="color: var(--convienGreen)">
+    </div>
+  </div>
+  <div class="featureOuterContainer Grid Grid--cols-2" style="background-color: var(--convienGreen);">
+    <div class="Grid-cell imgScale featureEcoFriendly">
+      <div class="featureInnenContainerUp">
+        <div class="featureContentTitle"><h2></h2></div>
+        <div class="featureContent"><p></p></div>
+      </div>
+    </div>
+    <div class="Grid-cell imgScale ">
+      <div class="featureInnenContainerDown">
+        <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
+        <div class="featureContent"><p>All necessary functionalities of the sophisticated CONVIEN are included in the CONVIEN EASY version. Your data is stored in a cloud safeguarding a permanent availability for the manager and all travelers involved in the organization of a meeting. Thus using CONVIEN EASY allows you to arrange travels and meetings and cut down on the Total-Cost-of-Travel up to 30% with a smart system.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="Security" class="featureContainer">
+  <div class="featureTitleContainer">
+    <div class="horizontalLeft">
+        <hr class="hr" style="color: var(--convienBlue)">
+    </div>
+    <div class="titleContainer">
+        <div class="imgScale icon100 iconSecurity" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: var(--convienBlue)">
+            <h2 style="margin-bottom: 10px;"><b>Ensure</b></h2>
+            <h4>COMPLIANCE WITH YOUR CORPORATE TRAVEL POLICIES</h4>
+        </div>
+    </div>
+    <div class="horizontalRight">
+        <hr class="hr" style="color: var(--convienBlue)">
+    </div>
+  </div>
+  <div class="featureOuterContainer Grid Grid--cols-2" style="background-color: var(--convienBlue);">
+    <div class="Grid-cell imgScale ">
+      <div class="featureInnenContainerUp">
+        <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
+        <div class="featureContent"><p>All necessary functionalities of the sophisticated CONVIEN are included in the CONVIEN EASY version. Your data is stored in a cloud safeguarding a permanent availability for the manager and all travelers involved in the organization of a meeting. Thus using CONVIEN EASY allows you to arrange travels and meetings and cut down on the Total-Cost-of-Travel up to 30% with a smart system.</p></div>
+      </div>
+    </div>
+    <div class="Grid-cell imgScale featureSecurity">
+      <div class="featureInnenContainerDown">
+        <div class="featureContentTitle"><h2></h2></div>
+        <div class="featureContent"><p></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <div>
+
+    <footer class="footerContainer">
+
+  <div class="footerBottom">
+    © 2017 CONVIEN GmbH - all rights reserved
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
