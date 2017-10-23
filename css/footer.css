@@ -1,0 +1,15 @@
+/* css für convien web Footer */
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 300px;
+}
+.footerBottom {
+  font-size: 14px;
+  line-height: 60px;
+  color: white;
+  text-align: center;
+  background-color: var(--lightGrey);
+}

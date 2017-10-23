@@ -1,0 +1,252 @@
+/* css für convien web images */
+
+.imgScale{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.iconMenu{
+	background-image: url("../img/iconMenu-w.svg");
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.iconMenuClose{
+	background-image: url("../img/iconMenuClose-w.svg");
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	position: absolute;
+	top: 40px;
+	right: 55px;
+	z-index: 3;
+}
+.logoConvien{ /* convien icon for menu */
+	background-image: url("../img/logoConvien-w.svg");
+	width: 130px;
+	height: 100px;
+}
+.logoConvienG{ /* only text with icon for featureEasy */
+	background-image: url("../img/logoConvien-g.svg");
+	width: 180px;
+	height: 60px;
+}
+.featureMoneySaving{
+	background-image: url("../img/featureMoneySaving.svg");
+	min-height: 400px;
+}
+.featureTravelInfo{
+	background-image: url("../img/featureTravelInfo.svg");
+	min-height: 400px;
+}
+.featureEcoFriendly{
+	background-image: url("../img/featureEcoFriendly.svg");
+	min-height: 400px;
+}
+.featureMeeting{
+	background-image: url("../img/featureMeeting.svg");
+	min-height: 400px;
+}
+.featureSecurity{
+	background-image: url("../img/featureSecurity.svg");
+	min-height: 400px;
+}
+	@media (max-width: 1199px) and (min-width: 768px){
+		.iconMenuClose{
+			top: 24px;
+			right: 38px;
+		}
+	}
+	@media (max-width: 767px){
+		.iconMenuClose{
+			top: 18px;
+			right: 30px;
+		}
+		.logoConvienG{
+			width: 150px;
+			height: 30px;
+		}
+	}
+
+/* CONVIEN EASY */
+.backgroundEasy {
+	background-image: url("../img/backgroundEasy.jpg");
+}
+.logoEasy{
+	background-image: url("../img/logoEasy-w.svg");
+	background-position: left;
+	height: 46px;
+	width: 270px;
+}
+.iconMoneySavingWW{
+	background-image: url("../img/iconMoneySaving-ww.svg");
+	margin: 10px;
+}
+.iconTravelInfoWW{
+	background-image: url("../img/iconTravelInfo-ww.svg");
+	margin: 10px;
+}
+.iconEcoFriendlyWW{
+	background-image: url("../img/iconEcoFriendly-ww.svg");
+	margin: 10px;
+}
+.iconMeetingWW{
+	background-image: url("../img/iconMeeting-ww.svg");
+	margin: 10px;
+}
+.iconLoginR{
+	background-image: url("../img/iconLogin-r.svg");
+	margin: 10px;
+}
+.iconMoneySavingWW:hover{ background-size: 95%;}
+.iconTravelInfoWW:hover{ background-size: 95%;}
+.iconMeetingWW:hover{ background-size: 95%; }
+.iconEcoFriendlyWW:hover{ background-size: 95%; }
+.iconLoginR:hover{ background-size: 95%; }
+
+/* CONVIEN BYOOBE */
+.backgroundByoobe {
+	background-image: url("../img/backgroundByoobe.jpg");
+	background-position: left bottom;
+}
+.logoByoobe{
+	background-image: url("../img/logoByoobe-g.svg");
+	background-position: left;
+	height: 46px;
+	width: 320px;
+}
+.iconMoneySaving{
+	background-image: url("../img/iconMoneySaving.svg");
+	margin: 15px;
+}
+.iconTravelInfo{
+	background-image: url("../img/iconTravelInfo.svg");
+	margin: 15px;
+}
+.iconEcoFriendly{
+	background-image: url("../img/iconEcoFriendly.svg");
+	margin: 15px;
+}
+.iconMeeting{
+	background-image: url("../img/iconMeeting.svg");
+	margin: 15px;
+}
+.iconSecurity{
+	background-image: url("../img/iconSecurity.svg");
+	margin: 15px;
+}
+.iconRequestR{
+	background-image: url("../img/iconRequest-r.svg");
+	margin: 15px;
+}
+.iconMoneySaving:hover{ background-size: 95%;}
+.iconTravelInfo:hover{ background-size: 95%;}
+.iconEcoFriendly:hover{ background-size: 95%; }
+.iconMeeting:hover{ background-size: 95%; }
+.iconSecurity:hover{ background-size: 95%; }
+.iconRequestR:hover{ background-size: 95%; }
+
+/* CONVIEN VENUE & feuture pages */
+.backgroundVenue {
+	background-image: url("../img/backgroundVenue.jpg");
+	background-position: left bottom;
+}
+.logoVenue{
+	background-image: url("../img/logoVenue-w.svg");
+	background-position: left;
+	height: 46px;
+	width: 295px;
+}
+.iconMoneySavingW{
+	background-image: url("../img/iconMoneySaving-w.svg");
+	margin: 15px;
+}
+.iconTravelInfoW{
+	background-image: url("../img/iconTravelInfo-w.svg");
+	margin: 15px;
+}
+.iconEcoFriendlyW{
+	background-image: url("../img/iconEcoFriendly-w.svg");
+	margin: 15px;
+}
+.iconMeetingW{
+	background-image: url("../img/iconMeeting-w.svg");
+	margin: 15px;
+}
+.iconSecurityW{
+	background-image: url("../img/iconSecurity-w.svg");
+	margin: 15px;
+}
+.iconRequestY{
+	background-image: url("../img/iconRequest-y.svg");
+	margin: 15px;
+}
+.iconMoneySavingW:hover{ background-size: 95%;}
+.iconTravelInfoW:hover{ background-size: 95%;}
+.iconEcoFriendlyW:hover{ background-size: 95%; }
+.iconMeetingW:hover{ background-size: 95%; }
+.iconSecurityW:hover{ background-size: 95%; }
+.iconRequestY:hover{ background-size: 95%; }
+
+	@media (max-width: 1199px) and (min-width: 768px){
+		.logoEasy,
+		.logoByoobe,
+		.logoVenue{
+			background-size: 90%;
+		}
+	}
+	@media (max-width: 767px){
+		.logoEasy{
+			background-size: 80%;
+			/*background-image: url("../img/logoConvienIcon-w.svg");
+			height: 45px;
+			width: 34px;
+			color: white;*/
+		}
+		.logoByoobe{
+			background-size: 80%;
+			/*background-image: url("../img/logoConvienIcon-w.svg");
+			height: 45px;
+			width: 34px;
+			color: white;*/
+		}
+		.iconMoneySaving{ margin: 10px; }
+		.iconTravelInfo{ margin: 10px; }
+		.iconEcoFriendly{ margin: 10px; }
+		.iconMeeting{ margin: 10px; }
+		.iconSecurity{ margin: 10px; }
+		.iconRequestR{ margin: 10px; }
+
+		.logoVenue{
+			background-size: 80%;
+			/*background-image: url("../img/logoConvienIcon-w.svg");
+			height: 45px;
+			width: 34px;
+			color: white;*/
+		}
+    .iconMoneySavingW{ margin: 10px; }
+    .iconTravelInfoW{ margin: 10px; }
+    .iconEcoFriendlyW{ margin: 10px; }
+		.iconMeetingW{ margin: 10px; }
+		.iconSecurityW{ margin: 10px; }
+		.iconRequestY{ margin: 10px; }
+	}
+
+.icon40 { height: 40px; width: 40px; }
+.icon100 { height: 100px; width: 100px; }
+
+	@media (max-width: 1199px) and (min-width: 768px){
+		.icon40 { height: 36px; width: 36px; }
+		.icon100 { height: 90px; width: 90px; }
+	}
+	@media (max-width: 767px){
+		.icon40 { height: 32px; width: 32px; }
+		.icon100{ height: 80px; width: 80px; }
+	}
+
+.iconFacebook{
+	background-image: url("../img/iconFacebook-w.svg");
+}
+.iconInstagram{
+	background-image: url("../img/iconInstagram-w.svg");
+}

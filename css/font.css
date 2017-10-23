@@ -1,0 +1,90 @@
+/* font css für convien web */
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, br, ul, li {
+	margin: 0;
+	font-weight: normal;
+}
+h1 { /* Oleo60 */
+	font-family: 'Oleo Script';
+	font-size: 60px;
+	line-height: 1;
+}
+h2 { /* Quick30 */
+	font-size: 30px;
+	line-height: 1.2;
+}
+h3 { /* Quick24 */
+	font-size: 24px;
+	line-height: 1.2;
+}
+h4 { /* Quick20 */
+	font-size: 20px;
+	line-height: 1.2;
+}
+h6 { /* Quick12 */
+	font-size: 14px;
+	line-height: 1.2;
+}
+p { /* Quick16 */
+	font-size: 16px;
+	line-height: 1.6;
+}
+.call2ActionText {
+	color: white;
+	height: 60px;
+	font-size: 20px;
+	line-height: 1;
+}
+.call2ActionText:hover {
+	font-size: 21px;
+}
+.checklistText {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+  @media (max-width: 1199px) and (min-width: 768px){
+		h1{
+			font-size: 54px;
+		}
+		h2{
+			font-size: 27px;
+		}
+		h3{
+			font-size: 22px;
+		}
+		h4, .checklistText {
+			font-size: 18px;
+		}
+		.call2ActionText{
+			font-size: 18px;
+			line-height: 1;
+		}
+		.call2ActionText:hover{
+			font-size: 19px;
+		}
+	}
+	@media (max-width: 767px){
+		h1{
+			font-size: 48px;
+		}
+		h2{
+			font-size: 24px;
+		}
+		h3{
+			font-size: 20px;
+		}
+		h4, .checklistText {
+			font-size: 16px;
+		}
+		.call2ActionText{
+			font-size: 16px;
+			line-height: 1;
+		}
+		.call2ActionText:hover{
+			font-size: 17px;
+		}
+	}

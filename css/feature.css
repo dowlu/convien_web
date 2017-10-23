@@ -1,0 +1,182 @@
+/* feature css für convien web */
+
+.mainfeatureContainer {
+  width: 80vw;
+  margin: auto;
+  padding: 20vh 0 30vh 0;
+  color: var(--darkGrey);
+}
+.mainfeatureTitle {
+  display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+  align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+  justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+  flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+}
+.checklistTitle {
+  text-align: center;
+  line-height: 40px;
+}
+.checklist { /* list-style-image, align with list text */
+  background: url('../img/iconCheck-r.svg') no-repeat left top;
+  margin-left: -40px;
+  padding-left: 40px;
+  list-style: none;
+}
+.featureContainer { /* for feature pages in feature.html */
+
+}
+.featureTitleContainer {
+  padding: 5vh 0 5vh 0;
+  display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+  align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+}
+.horizontalLeft{
+  width: 15vw;
+  padding-right: 60px;
+}
+.horizontalRight{
+  flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+  padding-left: 60px;
+}
+.titleContainer{ /* default flex-direction: row ; default div layout: column */
+  display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+}
+.titleTextContainer{
+  color: white;
+  margin-left: 20px;
+  display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+  flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+  justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+  flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+}
+.featureOuterContainer {
+  padding: 0 15vw 0 15vw;
+}
+.featureInnenContainerUp, .featureInnenContainerDown {
+  margin: 10vh 0 10vh 0;
+  min-height : 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+}
+.featureContentTitle {
+  color: white;
+  margin-bottom: 40px;
+}
+.featureContent {
+  color: white;
+}
+  @media (max-width: 1199px) and (min-width: 768px){
+    .mainfeatureContainer {
+      width: 85vw;
+    }
+    .featureOuterContainer {
+      padding: 0 7.5vw 0 7.5vw;
+    }
+    .featureInnenContainerUp {
+      min-height: auto;
+      margin: 10% 5% 5% 5% ;
+    }
+    .featureInnenContainerDown {
+      min-height: auto;
+      margin: 0 5% 10% 5% ;
+    }
+    .featureContentTitle {
+      text-align: center;
+    }
+  }
+  @media (max-width: 767px){
+    .mainfeatureContainer {
+      width: 90vw;
+    }
+    .featureOuterContainer {
+      padding: 0 5vw 0 5vw;
+    }
+    .featureInnenContainerUp {
+      min-height: auto;
+      margin: 10% 5% 5% 5% ;
+    }
+    .featureInnenContainerDown {
+      min-height: auto;
+      margin: 0 5% 10% 5%;
+    }
+    .featureContentTitle {
+      text-align: center;
+    }
+    .horizontalLeft{
+      width: 10vw;
+      padding-right: 0px;
+    }
+    .horizontalRight{
+      padding-left: 20px;
+    }
+    .checklist {
+      margin-left: -20px;
+      padding-left: 40px;
+    }
+  }
+
+.tooltip{
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  width: 160px;
+  font-size: 14px;
+  background-color: var(--convienRed);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -90px;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent var(--convienRed) transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
