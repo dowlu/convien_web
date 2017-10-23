@@ -5,22 +5,22 @@
 	--darkGrey: #4a4a4a;
 	--white: #ffffff;
 	--black50: rgba(0, 0, 0, 0.5);
-  --convienRed: #ae0018;
-  --darkRed: #770010;
-  --convienYellow: #F5A623;
-  --convienGreen: #417505;
-  --convienBlue: #005096;
+	--convienRed: #ae0018;
+	--darkRed: #770010;
+	--convienYellow: #F5A623;
+	--convienGreen: #417505;
+	--convienBlue: #005096;
 }
 
 .border{
-  border-width: 1px;
-  border-style: solid;
-  border-color: yellow;
+	border-width: 1px;
+	border-style: solid;
+	border-color: yellow;
 }
 .borderRed{
-  border-width: 3px;
-  border-style: solid;
-  border-color: red;
+	border-width: 3px;
+	border-style: solid;
+	border-color: red;
 }
 .hr {
 	border: 1px solid;
@@ -65,8 +65,8 @@ html, body {
 }
 button {
 	background-color: transparent; /* Green */
-  border: none;
-  text-align: center;
+	border: none;
+	text-align: center;
 }
 
 /* Langing Page */
@@ -77,46 +77,46 @@ button {
 	height: 100vh;
 }
 .contentContainer{
-  width: 75vw;
-  margin: auto;
+	width: 75vw;
+	margin: auto;
 	margin-top: 10vh;
 	height: calc(90vh - 126px);
 	display: flex;
 		display: -webkit-flex;
 		display: -moz-flex;
-  flex-flow: column;
+	flex-flow: column;
 		-webkit-flex-flow: column;
 		-moz-flex-flow: column;
 }
 .contentTitle{
-  color: white;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+	color: white;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .contentSubtitle{
-  color: white;
-  margin: 20px;
+	color: white;
+	margin: 20px;
 }
 .alignCenter{ /* convien byoobe & convien venue */
-  text-align: center;
+	text-align: center;
 }
 .featureContainerCenter{ /* for icons in landing page */
-  margin-top: 20px;
+	margin-top: 20px;
 	display: flex;
 		display: -webkit-flex;
 		display: -moz-flex;
 	justify-content: center;
 		-webkit-justify-content: center;
 		justify-content: center;
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
 }
 .alignRight{	/* convien easy */
-  text-align: right;
+	text-align: right;
 }
 .featureContainerRight{
-  margin-top: 20px;
-  margin-right: -10px;
+	margin-top: 20px;
+	margin-right: -10px;
 	display: flex;
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -130,14 +130,14 @@ button {
 
 	@media (max-width: 1199px) and (min-width: 768px){
 		.contentContainer{
-		    width: 85vw;
-				height: calc(90vh - 94px);
+			width: 85vw;
+			height: calc(90vh - 94px);
     }
 	}
 	@media (max-width: 767px){
 		.contentContainer{
-				width: 90vw;
-				height: calc(90vh - 78px);
+			width: 90vw;
+			height: calc(90vh - 78px);
 		}
 		.featureContainerCenter, .featureContainerRight {
 			display: none;
@@ -145,16 +145,16 @@ button {
 	}
 
 .btnRed{
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 60px;
-  border-radius: 30px;
-  border-width: 0px;
-  box-shadow: 0 2px 4px 0 var(--black50);
-  background-image: linear-gradient(var(--convienRed), var(--darkRed));
-  cursor: pointer;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 60px;
+	border-radius: 30px;
+	border-width: 0px;
+	box-shadow: 0 2px 4px 0 var(--black50);
+	background-image: linear-gradient(var(--convienRed), var(--darkRed));
+	cursor: pointer;
 }
 a:link, a:visited, a:hover, a:active {
 	color: white;
-  text-decoration: none;
+	text-decoration: none;
 }
