@@ -7,84 +7,81 @@ h1, h2, h3, h4, h5, h6, p, br, ul, li {
 	margin: 0;
 	font-weight: normal;
 }
-h1 { /* Oleo60 */
+
+/* mobile first : screenS < 576px */
+h1 { /* Oleo60 - Script title */
 	font-family: 'Oleo Script';
-	font-size: 60px;
+	font-size: 40px;
 	line-height: 1;
 }
-h2 { /* Quick30 */
-	font-size: 30px;
+h2 { /* Quick30 - Subtitle on landingPage, other Title */
+	font-size: 21px;
 	line-height: 1.2;
 }
-h3 { /* Quick24 */
-	font-size: 24px;
-	line-height: 1.2;
-}
-h4 { /* Quick20 */
+h3 { /* Quick24 - Tilte for Lists */
 	font-size: 20px;
 	line-height: 1.2;
 }
-h6 { /* Quick12 */
+h4 { /* Quick20 - Lists */
+	font-size: 16px;
+	line-height: 1.2;
+}
+h6 { /* Quick14 - Footnotes */
 	font-size: 14px;
 	line-height: 1.2;
 }
-p { /* Quick16 */
-	font-size: 16px;
+p { /* Quick16 - Texts, Contents */
+	font-size: 14px;
+  font-weight: lighter;
 	line-height: 1.6;
 }
 .call2ActionText {
 	color: white;
 	height: 60px;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1;
 }
 .call2ActionText:hover {
-	font-size: 21px;
+	font-size: 17px;
 }
 .checklistText {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 40px;
 }
 
-  @media (max-width: 1199px) and (min-width: 768px){
-		h1{
-			font-size: 54px;
-		}
-		h2{
-			font-size: 27px;
-		}
-		h3{
-			font-size: 22px;
-		}
-		h4, .checklistText {
-			font-size: 18px;
-		}
-		.call2ActionText{
-			font-size: 18px;
-			line-height: 1;
-		}
-		.call2ActionText:hover{
-			font-size: 19px;
-		}
-	}
-	@media (max-width: 767px){
-		h1{
-			font-size: 48px;
-		}
-		h2{
-			font-size: 24px;
-		}
-		h3{
-			font-size: 20px;
-		}
-		h4, .checklistText {
-			font-size: 16px;
-		}
-		.call2ActionText{
-			font-size: 16px;
-			line-height: 1;
-		}
-		.call2ActionText:hover{
-			font-size: 17px;
-		}
-	}
+/* screenM 576px - 767px */
+@media (min-width: 576px){
+  h1 { font-size: 48px; }
+  h2 { font-size: 24px; }
+}
+
+/* screenL 768px - 991px */
+@media (min-width: 768px){
+  h1 { font-size: 54px; }
+  h2 { font-size: 27px; }
+  h3 { font-size: 22px; }
+  h4 { font-size: 18px; }
+  p { font-size: 16px; }
+
+  .call2ActionText { font-size: 18px; }
+  .call2ActionText:hover { font-size: 19px; }
+  .checklistText { font-size: 18px; }
+}
+
+/* screenXL 992px - 1199px */
+@media (min-width: 992px){
+
+}
+
+/* screenXL > 1200px */
+@media (min-width: 1200px){
+  h1 { font-size: 60px; }
+  h2 { font-size: 30px; }
+  h3 { font-size: 24px; }
+  h4 { font-size: 20px; }
+  p { font-size: 20px; }
+
+  .call2ActionText { font-size: 20px; }
+  .call2ActionText:hover { font-size: 21px; }
+  .checklistText { font-size: 20px; }
+}

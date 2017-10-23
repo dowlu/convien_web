@@ -5,22 +5,22 @@
 	--darkGrey: #4a4a4a;
 	--white: #ffffff;
 	--black50: rgba(0, 0, 0, 0.5);
-	--convienRed: #ae0018;
-	--darkRed: #770010;
-	--convienYellow: #F5A623;
-	--convienGreen: #417505;
-	--convienBlue: #005096;
+  --convienRed: #ae0018;
+  --darkRed: #770010;
+  --convienYellow: #F5A623;
+  --convienGreen: #417505;
+  --convienBlue: #005096;
 }
 
 .border{
-	border-width: 1px;
-	border-style: solid;
-	border-color: yellow;
+  border-width: 1px;
+  border-style: solid;
+  border-color: yellow;
 }
 .borderRed{
-	border-width: 3px;
-	border-style: solid;
-	border-color: red;
+  border-width: 3px;
+  border-style: solid;
+  border-color: red;
 }
 .hr {
 	border: 1px solid;
@@ -41,34 +41,20 @@
 	border: 1px solid;
 	color: var(--darkGrey);
 }
-/*
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-*/
 
 html, body {
 	margin: 0;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	overflow-x: hidden;
 }
 button {
-	background-color: transparent; /* Green */
-	border: none;
-	text-align: center;
+	background-color: transparent;
+  border: none;
+  text-align: center;
 }
 
+/* mobile first : screenS < 576px */
 /* Langing Page */
 .landingPageContainer {
 	background-size: cover;
@@ -77,46 +63,46 @@ button {
 	height: 100vh;
 }
 .contentContainer{
-	width: 75vw;
-	margin: auto;
+  width: 85vw;
+  margin: auto;
 	margin-top: 10vh;
-	height: calc(90vh - 126px);
+	height: calc(90vh - 78px);
 	display: flex;
 		display: -webkit-flex;
 		display: -moz-flex;
-	flex-flow: column;
+  flex-flow: column;
 		-webkit-flex-flow: column;
 		-moz-flex-flow: column;
 }
 .contentTitle{
-	color: white;
-	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .contentSubtitle{
-	color: white;
-	margin: 20px;
+  color: white;
+  margin: 20px;
 }
 .alignCenter{ /* convien byoobe & convien venue */
-	text-align: center;
+  text-align: center;
 }
 .featureContainerCenter{ /* for icons in landing page */
-	margin-top: 20px;
+  margin-top: 20px;
 	display: flex;
 		display: -webkit-flex;
 		display: -moz-flex;
 	justify-content: center;
 		-webkit-justify-content: center;
 		justify-content: center;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
 }
 .alignRight{	/* convien easy */
-	text-align: right;
+  text-align: right;
 }
-.featureContainerRight{
-	margin-top: 20px;
-	margin-right: -10px;
+.featureContainerRight{	 /* for icons in landing page */
+  margin-top: 20px;
+  margin-right: -10px;
 	display: flex;
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -128,33 +114,174 @@ button {
 		-moz-flex-wrap: wrap;
 }
 
-	@media (max-width: 1199px) and (min-width: 768px){
-		.contentContainer{
-			width: 85vw;
-			height: calc(90vh - 94px);
-    }
+@media (max-width: 356px){
+	.featureContainerCenter, .featureContainerRight {
+		display: none; /* icons on the small mobile are hiding */
 	}
-	@media (max-width: 767px){
-		.contentContainer{
-			width: 90vw;
-			height: calc(90vh - 78px);
-		}
-		.featureContainerCenter, .featureContainerRight {
-			display: none;
-		}
+}
+@media only screen
+  and (max-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape){
+	.featureContainerCenter, .featureContainerRight {
+		display: none; /* icons on the mobile lanscape are hiding */
 	}
+}
+
+/* screenM 576px - 767px */
+@media (min-width: 576px){
+
+}
+
+/* screenL 768px - 991px */
+@media (min-width: 768px){
+	.contentContainer{
+		width: 80vw;
+		height: calc(90vh - 94px);
+	}
+}
+
+/* screenXL 992px - 1199px */
+@media (min-width: 992px){
+
+}
+
+/* screenXL > 1200px */
+@media (min-width: 1200px){
+	.contentContainer{
+		width: 75vw;
+		height: calc(90vh - 126px);
+	}
+}
 
 .btnRed{
-	padding-left: 20px;
-	padding-right: 20px;
-	height: 60px;
-	border-radius: 30px;
-	border-width: 0px;
-	box-shadow: 0 2px 4px 0 var(--black50);
-	background-image: linear-gradient(var(--convienRed), var(--darkRed));
-	cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 60px;
+  border-radius: 30px;
+  border-width: 0px;
+  box-shadow: 0 2px 4px 0 var(--black50);
+  background-image: linear-gradient(var(--convienRed), var(--darkRed));
+  cursor: pointer;
 }
 a:link, a:visited, a:hover, a:active {
 	color: white;
-	text-decoration: none;
+  text-decoration: none;
+}
+
+/* tooltips bottom for feature icons */
+.tooltip{
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  width: 160px;
+  font-size: 14px;
+  background-color: var(--convienRed);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -90px;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent var(--convienRed) transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* modal overlay */
+.modal{
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation-name: fadeIn;
+  animation-duration: 0.4;
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 0.4s;
+}
+.modalMenuContent{
+  position: fixed;
+  width: 100%;
+	height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  top: 0;
+  right: 0;
+	bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+		-webkit-animation-name: slideIn;
+		-webkit-animation-duration: 0.4s;
+}
+.alignCenterMenu{
+	display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+	flex-flow: column;
+		-webkit-flex-flow: column;
+		-moz-flex-flow: column;
+	align-items: center;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+	justify-content: center;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+}
+.menuTexts{
+	font-size: 20px;
+	line-height: 40px;
+	color: white;
+	text-align: center;
+}
+.menuTexts:hover {
+	text-decoration: underline;
+}
+@-webkit-keyframes slideIn {
+  from {right: -300px; opacity: 0}
+  to {right: 0; opacity: 0.8}
+}
+@keyframes slideIn {
+  from {right: -300px; opacity: 0}
+  to {right: 0; opacity: 0.8}
+}
+@-webkit-keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@media (min-width: 767px) {
+	.modalMenuContent {
+		width: 300px;
+	}
 }

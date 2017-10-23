@@ -1,5 +1,6 @@
 /* css für convien web images */
 
+/* mobile first : screenS < 576px */
 .imgScale{
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -7,18 +8,14 @@
 }
 .iconMenu{
 	background-image: url("../img/iconMenu-w.svg");
-	width: 40px;
-	height: 40px;
 	cursor: pointer;
 }
 .iconMenuClose{
 	background-image: url("../img/iconMenuClose-w.svg");
-	width: 40px;
-	height: 40px;
 	cursor: pointer;
 	position: absolute;
-	top: 40px;
-	right: 55px;
+	top: 18px;
+	right: 30px;
 	z-index: 3;
 }
 .logoConvien{ /* convien icon for menu */
@@ -26,7 +23,7 @@
 	width: 130px;
 	height: 100px;
 }
-.logoConvienG{ /* only text with icon for featureEasy */
+.logoConvienG{ /* only text with icon for featureEasy mainfeature */
 	background-image: url("../img/logoConvien-g.svg");
 	width: 180px;
 	height: 60px;
@@ -51,22 +48,6 @@
 	background-image: url("../img/featureSecurity.svg");
 	min-height: 400px;
 }
-	@media (max-width: 1199px) and (min-width: 768px){
-		.iconMenuClose{
-			top: 24px;
-			right: 38px;
-		}
-	}
-	@media (max-width: 767px){
-		.iconMenuClose{
-			top: 18px;
-			right: 30px;
-		}
-		.logoConvienG{
-			width: 150px;
-			height: 30px;
-		}
-	}
 
 /* CONVIEN EASY */
 .backgroundEasy {
@@ -77,176 +58,191 @@
 	background-position: left;
 	height: 46px;
 	width: 270px;
+	background-size: 80%;
 }
 .iconMoneySavingWW{
 	background-image: url("../img/iconMoneySaving-ww.svg");
-	margin: 10px;
 }
 .iconTravelInfoWW{
 	background-image: url("../img/iconTravelInfo-ww.svg");
-	margin: 10px;
 }
 .iconEcoFriendlyWW{
 	background-image: url("../img/iconEcoFriendly-ww.svg");
-	margin: 10px;
 }
 .iconMeetingWW{
 	background-image: url("../img/iconMeeting-ww.svg");
-	margin: 10px;
 }
 .iconLoginR{
 	background-image: url("../img/iconLogin-r.svg");
-	margin: 10px;
 }
-.iconMoneySavingWW:hover{ background-size: 95%;}
-.iconTravelInfoWW:hover{ background-size: 95%;}
-.iconMeetingWW:hover{ background-size: 95%; }
-.iconEcoFriendlyWW:hover{ background-size: 95%; }
-.iconLoginR:hover{ background-size: 95%; }
+
+.iconMoneySavingWW,
+.iconTravelInfoWW,
+.iconMeetingWW,
+.iconEcoFriendlyWW,
+.iconLoginR { margin: 10px; }
+
+.iconMoneySavingWW:hover,
+.iconTravelInfoWW:hover,
+.iconMeetingWW:hover,
+.iconEcoFriendlyWW:hover,
+.iconLoginR:hover { background-size: 95%; }
 
 /* CONVIEN BYOOBE */
 .backgroundByoobe {
 	background-image: url("../img/backgroundByoobe.jpg");
 	background-position: left bottom;
 }
-.logoByoobe{
+.logoByoobe {
 	background-image: url("../img/logoByoobe-g.svg");
 	background-position: left;
 	height: 46px;
 	width: 320px;
+	background-size: 80%;
 }
-.iconMoneySaving{
+.iconMoneySaving {
 	background-image: url("../img/iconMoneySaving.svg");
-	margin: 15px;
 }
-.iconTravelInfo{
+.iconTravelInfo {
 	background-image: url("../img/iconTravelInfo.svg");
-	margin: 15px;
 }
-.iconEcoFriendly{
+.iconEcoFriendly {
 	background-image: url("../img/iconEcoFriendly.svg");
-	margin: 15px;
 }
-.iconMeeting{
+.iconMeeting {
 	background-image: url("../img/iconMeeting.svg");
-	margin: 15px;
 }
-.iconSecurity{
+.iconSecurity {
 	background-image: url("../img/iconSecurity.svg");
-	margin: 15px;
 }
-.iconRequestR{
+.iconRequestR {
 	background-image: url("../img/iconRequest-r.svg");
-	margin: 15px;
 }
-.iconMoneySaving:hover{ background-size: 95%;}
-.iconTravelInfo:hover{ background-size: 95%;}
-.iconEcoFriendly:hover{ background-size: 95%; }
-.iconMeeting:hover{ background-size: 95%; }
-.iconSecurity:hover{ background-size: 95%; }
-.iconRequestR:hover{ background-size: 95%; }
+
+.iconMoneySaving,
+.iconTravelInfo,
+.iconEcoFriendly,
+.iconMeeting,
+.iconSecurity,
+.iconRequestR { margin: 10px; }
+
+.iconMoneySaving:hover,
+.iconTravelInfo:hover,
+.iconEcoFriendly:hover,
+.iconMeeting:hover,
+.iconSecurity:hover,
+.iconRequestR:hover { background-size: 95%; }
 
 /* CONVIEN VENUE & feuture pages */
 .backgroundVenue {
 	background-image: url("../img/backgroundVenue.jpg");
 	background-position: left bottom;
 }
-.logoVenue{
+.logoVenue {
 	background-image: url("../img/logoVenue-w.svg");
 	background-position: left;
 	height: 46px;
 	width: 295px;
+	background-size: 80%;
 }
-.iconMoneySavingW{
+.iconMoneySavingW {
 	background-image: url("../img/iconMoneySaving-w.svg");
-	margin: 15px;
 }
-.iconTravelInfoW{
+.iconTravelInfoW {
 	background-image: url("../img/iconTravelInfo-w.svg");
-	margin: 15px;
 }
-.iconEcoFriendlyW{
+.iconEcoFriendlyW {
 	background-image: url("../img/iconEcoFriendly-w.svg");
-	margin: 15px;
 }
-.iconMeetingW{
+.iconMeetingW {
 	background-image: url("../img/iconMeeting-w.svg");
-	margin: 15px;
 }
-.iconSecurityW{
+.iconSecurityW {
 	background-image: url("../img/iconSecurity-w.svg");
-	margin: 15px;
 }
-.iconRequestY{
+.iconRequestY {
 	background-image: url("../img/iconRequest-y.svg");
-	margin: 15px;
 }
-.iconMoneySavingW:hover{ background-size: 95%;}
-.iconTravelInfoW:hover{ background-size: 95%;}
-.iconEcoFriendlyW:hover{ background-size: 95%; }
-.iconMeetingW:hover{ background-size: 95%; }
-.iconSecurityW:hover{ background-size: 95%; }
-.iconRequestY:hover{ background-size: 95%; }
 
-	@media (max-width: 1199px) and (min-width: 768px){
-		.logoEasy,
-		.logoByoobe,
-		.logoVenue{
-			background-size: 90%;
-		}
-	}
-	@media (max-width: 767px){
-		.logoEasy{
-			background-size: 80%;
-			/*background-image: url("../img/logoConvienIcon-w.svg");
-			height: 45px;
-			width: 34px;
-			color: white;*/
-		}
-		.logoByoobe{
-			background-size: 80%;
-			/*background-image: url("../img/logoConvienIcon-w.svg");
-			height: 45px;
-			width: 34px;
-			color: white;*/
-		}
-		.iconMoneySaving{ margin: 10px; }
-		.iconTravelInfo{ margin: 10px; }
-		.iconEcoFriendly{ margin: 10px; }
-		.iconMeeting{ margin: 10px; }
-		.iconSecurity{ margin: 10px; }
-		.iconRequestR{ margin: 10px; }
+.iconMoneySavingW,
+.iconTravelInfoW,
+.iconEcoFriendlyW,
+.iconMeetingW,
+.iconSecurityW,
+.iconRequestY { margin: 10px; }
 
-		.logoVenue{
-			background-size: 80%;
-			/*background-image: url("../img/logoConvienIcon-w.svg");
-			height: 45px;
-			width: 34px;
-			color: white;*/
-		}
-    .iconMoneySavingW{ margin: 10px; }
-    .iconTravelInfoW{ margin: 10px; }
-    .iconEcoFriendlyW{ margin: 10px; }
-		.iconMeetingW{ margin: 10px; }
-		.iconSecurityW{ margin: 10px; }
-		.iconRequestY{ margin: 10px; }
-	}
+.iconMoneySavingW:hover,
+.iconTravelInfoW:hover,
+.iconEcoFriendlyW:hover,
+.iconMeetingW:hover,
+.iconSecurityW:hover,
+.iconRequestY:hover { background-size: 95%; }
 
-.icon40 { height: 40px; width: 40px; }
-.icon100 { height: 100px; width: 100px; }
+.icon40 { height: 32px; width: 32px; }
+.icon100 { height: 80px; width: 80px; }
 
-	@media (max-width: 1199px) and (min-width: 768px){
-		.icon40 { height: 36px; width: 36px; }
-		.icon100 { height: 90px; width: 90px; }
-	}
-	@media (max-width: 767px){
-		.icon40 { height: 32px; width: 32px; }
-		.icon100{ height: 80px; width: 80px; }
-	}
-
-.iconFacebook{
+.iconFacebook {
 	background-image: url("../img/iconFacebook-w.svg");
 }
-.iconInstagram{
+.iconInstagram {
 	background-image: url("../img/iconInstagram-w.svg");
+}
+
+
+/* screenM 576px - 767px */
+@media (min-width: 576px){
+
+}
+
+/* screenL 768px - 991px */
+@media (min-width: 768px){
+	.iconMenuClose{
+		top: 24px;
+		right: 38px;
+	}
+	.logoConvienG{
+		width: 150px;
+		height: 30px;
+	}
+
+	.logoEasy,
+	.logoByoobe,
+	.logoVenue { background-size: 90%; }
+
+	.icon40 { height: 36px; width: 36px; }
+	.icon100 { height: 90px; width: 90px; }
+}
+
+/* screenXL 992px - 1199px */
+@media (min-width: 992px){
+
+}
+
+/* screenXL > 1200px */
+@media (min-width: 1200px){
+	.iconMenuClose{
+		top: 40px;
+		right: 55px;
+	}
+
+	.logoEasy,
+	.logoByoobe,
+	.logoVenue { background-size: 100%; }
+
+	.iconMoneySaving,
+	.iconTravelInfo,
+	.iconEcoFriendly,
+	.iconMeeting,
+	.iconSecurity,
+	.iconRequestR { margin: 15px; }
+
+	.iconMoneySavingW,
+	.iconTravelInfoW,
+	.iconEcoFriendlyW,
+	.iconMeetingW,
+	.iconSecurityW,
+	.iconRequestY { margin: 15px; }
+
+	.icon40 { height: 40px; width: 40px; }
+	.icon100 { height: 100px; width: 100px; }
 }

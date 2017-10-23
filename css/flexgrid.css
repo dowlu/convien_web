@@ -95,7 +95,7 @@
   }
 }
 
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
   .Grid--cols-2 > .Grid-cell,
   .Grid--cols-3 > .Grid-cell,
   .Grid--cols-4 > .Grid-cell,

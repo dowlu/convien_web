@@ -13,3 +13,23 @@
   text-align: center;
   background-color: var(--lightGrey);
 }
+
+/* screenM 576px - 767px */
+@media (min-width: 576px){
+
+}
+
+/* screenL 768px - 991px */
+@media (min-width: 768px){
+
+}
+
+/* screenXL 992px - 1199px */
+@media (min-width: 992px){
+
+}
+
+/* screenXL > 1200px */
+@media (min-width: 1200px){
+	
+}
