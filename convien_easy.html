@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/feature.css">
-    
+
   <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Quicksand" rel="stylesheet">
 
   <script src="js/jquery-3.2.1.min.js"></script>
@@ -255,12 +255,38 @@
 
     <div>
 
-    <footer class="footerContainer">
+    <div class="contactUsContainer">
+  <h2>STAY IN TOUCH WITH CONVIEN</h2>
+  <h4><span style="color: var(--lightGrey);">Just send as your inquiry or ask for a callback.</span></h4>
+  <form id="contact" action="" method="post">
+    <div class="Grid Grid--cols-2">
+      <div class="Grid-cell">
+        <fieldset>
+          <input placeholder="Your Name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+        </fieldset>
+      </div>
+      <div class="Grid-cell">
+        <fieldset>
+          <textarea placeholder="Type your Message Here ..." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+      </div>
+    </div>
+  </form>
+</div>
 
+<footer class="footerContainer">
   <div class="footerBottom">
     © 2017 CONVIEN GmbH - all rights reserved
   </div>
-
 </footer>
 
 
