@@ -47,9 +47,9 @@
       <div class="imgScale iconMenuClose icon40" onclick="menuClose()"></div>
       <div class="alignCenterMenu" style="min-height: 100%;">
         <div class="imgScale logoConvien" style="margin-bottom: 20px;"></div>
-        <span class="menuTexts"><a href="#">About us</a></span>
-        <span class="menuTexts"><a href="#">Contact</a></span>
-        <span class="menuTexts"><a href="#">Imprint</a></span>
+        <span class="menuTexts" onclick="menuClose()"><a href="#">About us</a></span>
+        <span class="menuTexts" onclick="menuClose()"><a href="#ContactUs" target="_parent">Contact</a></span>
+        <span class="menuTexts" onclick="menuClose()"><a href="#">Imprint</a></span>
       </div>
     </div>
   </div>
@@ -267,14 +267,14 @@
 
     <div>
 
-    <div class="contactUsContainer">
+    <div class="contactUsContainer" id="ContactUs">
   <h2>STAY IN TOUCH WITH CONVIEN</h2>
   <h4><span style="color: var(--lightGrey);">Just send as your inquiry or ask for a callback.</span></h4>
   <form id="contact" action="" method="post">
     <div class="Grid Grid--cols-2">
       <div class="Grid-cell">
         <fieldset>
-          <input placeholder="Your Name" type="text" tabindex="1" required autofocus>
+          <input placeholder="Your Name" type="text" tabindex="1" required>
         </fieldset>
         <fieldset>
           <input placeholder="Your Email Address" type="email" tabindex="2" required>
