@@ -5,22 +5,23 @@
 	--darkGrey: #4a4a4a;
 	--white: #ffffff;
 	--black50: rgba(0, 0, 0, 0.5);
-	--convienRed: #ae0018;
-	--darkRed: #770010;
-	--convienYellow: #F5A623;
-	--convienGreen: #417505;
-	--convienBlue: #005096;
+  --convienRed: #ae0018;
+  --darkRed: #770010;
+  --convienYellow: #F5A623;
+	--neonYellow: #F8E71C;
+  --convienGreen: #417505;
+  --convienBlue: #005096;
 }
 
 .border{
-	border-width: 1px;
-	border-style: solid;
-	border-color: yellow;
+  border-width: 1px;
+  border-style: solid;
+  border-color: yellow;
 }
 .borderRed{
-	border-width: 3px;
-	border-style: solid;
-	border-color: red;
+  border-width: 3px;
+  border-style: solid;
+  border-color: red;
 }
 .hr {
 	border: 1px solid;
@@ -50,8 +51,10 @@ html, body {
 }
 button {
 	background-color: transparent;
-	border: none;
-	text-align: center;
+  border: none;
+	margin: 0;
+	padding: 0;
+  text-align: center;
 }
 
 /* mobile first : screenS < 576px */
@@ -63,46 +66,46 @@ button {
 	height: 100vh;
 }
 .contentContainer{
-	width: 85vw;
-	margin: auto;
+  width: 85vw;
+  margin: auto;
 	margin-top: 10vh;
 	height: calc(90vh - 78px);
 	display: flex;
 		display: -webkit-flex;
 		display: -moz-flex;
-	flex-flow: column;
+  flex-flow: column;
 		-webkit-flex-flow: column;
 		-moz-flex-flow: column;
 }
 .contentTitle{
-	color: white;
-	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .contentSubtitle{
-	color: white;
-margin: 20px;
+  color: white;
+  margin: 20px 0 20px 0;
 }
 .alignCenter{ /* convien byoobe & convien venue */
-	text-align: center;
+  text-align: center;
 }
 .featureContainerCenter{ /* for icons in landing page */
-	margin-top: 20px;
+  margin-top: 20px;
 	display: flex;
 		display: -webkit-flex;
 		display: -moz-flex;
 	justify-content: center;
 		-webkit-justify-content: center;
 		justify-content: center;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
 }
 .alignRight{	/* convien easy */
-	text-align: right;
+  text-align: right;
 }
 .featureContainerRight{	 /* for icons in landing page */
-	margin-top: 20px;
-	margin-right: -10px;
+  margin-top: 20px;
+  margin-right: -10px;
 	display: flex;
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -112,6 +115,29 @@ margin: 20px;
 	flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
+}
+.contactBtn {
+	display: flex;
+	z-index: -1;
+	height: 80px;
+	border-radius: 50px;
+	border-width: 0px;
+	box-shadow: 0 2px 4px 0 var(--black50);
+	cursor: pointer;
+}
+.contactBtnText {
+	display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+	flex-flow: column;
+		-webkit-flex-flow: column;
+		-moz-flex-flow: column;
+	justify-content: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+	text-align: left;
+	color: white;
+	margin-right: 20px;
 }
 
 @media (max-width: 356px){
@@ -139,6 +165,9 @@ margin: 20px;
 		width: 80vw;
 		height: calc(90vh - 94px);
 	}
+	.contactBtn {
+		height: 90px;
+	}
 }
 
 /* screenXL 992px - 1199px */
@@ -151,6 +180,9 @@ margin: 20px;
 	.contentContainer{
 		width: 75vw;
 		height: calc(90vh - 126px);
+	}
+	.contactBtn {
+		height: 100px;
 	}
 }
 
@@ -180,8 +212,8 @@ a:link, a:visited, a:hover, a:active {
   background-color: var(--convienRed);
   color: white;
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 10px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
 
   /* Position the tooltip */
   position: absolute;
@@ -197,7 +229,7 @@ a:link, a:visited, a:hover, a:active {
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  bottom: 100%;  /* At the top of the tooltip */
+  bottom: 100%;  /* arrow at the top of the tooltip */
   left: 50%;
   margin-left: -8px;
   border-width: 8px;

@@ -57,8 +57,9 @@
 	background-image: url("../img/logoEasy-w.svg");
 	background-position: left;
 	height: 46px;
-	width: 270px;
-	background-size: 80%;
+	width: 200px;
+	/*width: 270px;*/
+	background-size: 100%;
 }
 .iconMoneySavingWW{
 	background-image: url("../img/iconMoneySaving-ww.svg");
@@ -79,8 +80,7 @@
 .iconMoneySavingWW,
 .iconTravelInfoWW,
 .iconMeetingWW,
-.iconEcoFriendlyWW,
-.iconLoginR { margin: 10px; }
+.iconEcoFriendlyWW { margin: 10px; }
 
 .iconMoneySavingWW:hover,
 .iconTravelInfoWW:hover,
@@ -97,8 +97,9 @@
 	background-image: url("../img/logoByoobe-g.svg");
 	background-position: left;
 	height: 46px;
-	width: 320px;
-	background-size: 80%;
+	width: 200px;
+	/*width: 320px;*/
+	background-size: 100%;
 }
 .iconMoneySaving {
 	background-image: url("../img/iconMoneySaving.svg");
@@ -123,8 +124,7 @@
 .iconTravelInfo,
 .iconEcoFriendly,
 .iconMeeting,
-.iconSecurity,
-.iconRequestR { margin: 10px; }
+.iconSecurity { margin: 10px; }
 
 .iconMoneySaving:hover,
 .iconTravelInfo:hover,
@@ -142,8 +142,9 @@
 	background-image: url("../img/logoVenue-w.svg");
 	background-position: left;
 	height: 46px;
-	width: 295px;
-	background-size: 80%;
+	width: 200px;
+	/*width: 295px;*/
+	background-size: 100%;
 }
 .iconMoneySavingW {
 	background-image: url("../img/iconMoneySaving-w.svg");
@@ -168,8 +169,7 @@
 .iconTravelInfoW,
 .iconEcoFriendlyW,
 .iconMeetingW,
-.iconSecurityW,
-.iconRequestY { margin: 10px; }
+.iconSecurityW { margin: 10px; }
 
 .iconMoneySavingW:hover,
 .iconTravelInfoW:hover,
@@ -191,7 +191,9 @@
 
 /* screenM 576px - 767px */
 @media (min-width: 576px){
-
+	.logoEasy { width: 270px; }
+	.logoByoobe { width: 320px; }
+	.logoVenue { width: 295px; }
 }
 
 /* screenL 768px - 991px */
@@ -233,15 +235,13 @@
 	.iconTravelInfo,
 	.iconEcoFriendly,
 	.iconMeeting,
-	.iconSecurity,
-	.iconRequestR { margin: 15px; }
+	.iconSecurity { margin: 15px; }
 
 	.iconMoneySavingW,
 	.iconTravelInfoW,
 	.iconEcoFriendlyW,
 	.iconMeetingW,
-	.iconSecurityW,
-	.iconRequestY { margin: 15px; }
+	.iconSecurityW { margin: 15px; }
 
 	.icon40 { height: 40px; width: 40px; }
 	.icon100 { height: 100px; width: 100px; }

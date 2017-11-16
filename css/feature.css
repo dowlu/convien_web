@@ -1,6 +1,12 @@
 /* feature css für convien web */
 
 /* mobile first : screenS < 576px */
+.featureModal {
+  display: none;
+}
+.featureBanner {
+  display: block;
+}
 .mainfeatureContainer {
   width: 90vw;
   margin: auto;
@@ -32,8 +38,11 @@
   margin-left: -20px;
   padding-left: 40px;
 }
-.featureContainer { /* for feature pages in feature.html */
-
+.featureContainer { /* for feature banners in feature.html */
+}
+.featureModalContainer { /* for feature modal pages in featureModal.html */
+  height: 90vh;
+  margin: 5vh 7.5vw 5vh 7.5vw;
 }
 .featureTitleContainer {
   padding: 5vh 0 5vh 0;
@@ -80,7 +89,7 @@
 }
 .featureInnenContainerUp {
   min-height: auto;
-  margin: 10% 5% 5% 5%;
+  margin: 0 5% 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,16 +107,16 @@
 }
 .featureContentTitle {
   color: white;
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
   text-align: center;
 }
 .featureContent {
   color: white;
+  margin: 0 0 0 0;
 }
 
 /* screenM 576px - 767px */
 @media (min-width: 576px){
-
 }
 
 /* screenL 768px - 991px */
@@ -122,11 +131,16 @@
 
 /* screenXL 992px - 1199px */
 @media (min-width: 992px){
-
 }
 
 /* screenXL > 1200px */
 @media (min-width: 1200px){
+  .featureModal {
+    display: block;
+  }
+  .featureBanner {
+    display: none;
+  }
   .mainfeatureContainer {
     width: 80vw;
   }
@@ -135,7 +149,7 @@
   }
   .featureInnenContainerUp,
   .featureInnenContainerDown {
-    margin: 10vh 0 10vh 0;
+    margin: 5vh 0 15vh 0;
     min-height : 60vh;
   }
   .featureContentTitle {
