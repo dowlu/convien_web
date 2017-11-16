@@ -55,8 +55,203 @@
   </div>
 </header>
 
-    <div class="contentContainer alignCenter">
-  <h1 class="contentTitle">your corporate travel management</h1>
+    <style type="text/css">
+    .contactBtn {
+    	margin: 15px;
+      background-color: var(--neonYellow);
+    }
+    .contactBtnText {
+      margin-left: 5px;
+      color: var(--darkGrey);
+    }
+</style>
+
+<div class="featureModal">
+  
+    <div class="modal" id="MoneySaving">
+  <div class="imgScale iconMenuClose icon40" onclick="closeMoneySaving()"></div>
+  <div class="featureModalContainer" style="background-color: var(--convienYellow);">
+    <div class="featureTitleContainer" >
+      <div class="horizontalLeft" style="width: 10vw;">
+        <hr class="hrwhite">
+      </div>
+      <div class="titleContainer">
+        <div class="imgScale icon100 iconMoneySavingW" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: white">
+          <h2 style="margin-bottom: 10px;"><b>Economize</b></h2>
+          <h4>YOUR TOTAL COST OF TRAVEL</h4>
+        </div>
+      </div>
+      <div class="horizontalRight">
+        <hr class="hrwhite">
+      </div>
+    </div>
+    <div class="featureOuterContainer Grid Grid--cols-2" style="padding: 0 10vw 0 10vw;">
+      <div class="Grid-cell imgScale featureMoneySaving">
+        <div class="featureInnenContainerUp" style="min-height : 60vh; margin: 0;">
+          <div class="featureContentTitle"><h2></h2></div>
+          <div class="featureContent"><p></p></div>
+        </div>
+      </div>
+      <div class="Grid-cell imgScale ">
+        <div class="featureInnenContainerDown" style="min-height : 60vh; margin: 0;">
+          <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
+          <div class="featureContent"><p>All necessary functionalities of the sophisticated CONVIEN are included in the CONVIEN EASY version. Your data is stored in a cloud safeguarding a permanent availability for the manager and all travelers involved in the organization of a meeting. Thus using CONVIEN EASY allows you to arrange travels and meetings and cut down on the Total-Cost-of-Travel up to 30% with a smart system.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="modal" id="TravelInfo">
+  <div class="imgScale iconMenuClose icon40" onclick="closeTravelInfo()"></div>
+  <div class="featureModalContainer" style="background-color: var(--darkGrey);">
+    <div class="featureTitleContainer" >
+      <div class="horizontalLeft" style="width: 10vw;">
+        <hr class="hrwhite">
+      </div>
+      <div class="titleContainer">
+        <div class="imgScale icon100 iconTravelInfoW" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: white">
+          <h2 style="margin-bottom: 10px;"><b>Manage</b></h2>
+          <h4>YOUR TRAVEL SMARTLY</h4>
+        </div>
+      </div>
+      <div class="horizontalRight">
+        <hr class="hrwhite">
+      </div>
+    </div>
+    <div class="featureOuterContainer Grid Grid--cols-2" style="padding: 0 10vw 0 10vw;">
+      <div class="Grid-cell imgScale ">
+        <div class="featureInnenContainerUp" style="min-height : 60vh; margin: 0;">
+          <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
+          <div class="featureContent"><p>All necessary functionalities of the sophisticated CONVIEN are included in the CONVIEN EASY version. Your data is stored in a cloud safeguarding a permanent availability for the manager and all travelers involved in the organization of a meeting. Thus using CONVIEN EASY allows you to arrange travels and meetings and cut down on the Total-Cost-of-Travel up to 30% with a smart system.</p></div>
+        </div>
+      </div>
+      <div class="Grid-cell imgScale featureTravelInfo">
+        <div class="featureInnenContainerDown" style="min-height : 60vh; margin: 0;">
+          <div class="featureContentTitle"><h2></h2></div>
+          <div class="featureContent"><p></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="modal" id="Meeting">
+  <div class="imgScale iconMenuClose icon40" onclick="closeMeeting()"></div>
+  <div class="featureModalContainer" style="background-color: var(--convienRed);">
+    <div class="featureTitleContainer" >
+      <div class="horizontalLeft" style="width: 10vw;">
+        <hr class="hrwhite">
+      </div>
+      <div class="titleContainer">
+        <div class="imgScale icon100 iconMeetingW" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: white">
+          <h2 style="margin-bottom: 10px;"><b>Ease</b></h2>
+          <h4>YOUR MEETING ARRANGEMENTS</h4>
+        </div>
+      </div>
+      <div class="horizontalRight">
+        <hr class="hrwhite">
+      </div>
+    </div>
+    <div class="featureOuterContainer Grid Grid--cols-2" style="padding: 0 10vw 0 10vw;">
+      <div class="Grid-cell imgScale featureMeeting">
+        <div class="featureInnenContainerUp" style="min-height : 60vh; margin: 0;">
+          <div class="featureContentTitle"><h2></h2></div>
+          <div class="featureContent"><p></p></div>
+        </div>
+      </div>
+      <div class="Grid-cell imgScale ">
+        <div class="featureInnenContainerDown" style="min-height : 60vh; margin: 0;">
+          <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
+          <div class="featureContent"><p>All necessary functionalities of the sophisticated CONVIEN are included in the CONVIEN EASY version. Your data is stored in a cloud safeguarding a permanent availability for the manager and all travelers involved in the organization of a meeting. Thus using CONVIEN EASY allows you to arrange travels and meetings and cut down on the Total-Cost-of-Travel up to 30% with a smart system.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="modal" id="EcoFriendly">
+  <div class="imgScale iconMenuClose icon40" onclick="closeEcoFriendly()"></div>
+  <div class="featureModalContainer" style="background-color: var(--convienGreen);">
+    <div class="featureTitleContainer" >
+      <div class="horizontalLeft" style="width: 10vw;">
+        <hr class="hrwhite">
+      </div>
+      <div class="titleContainer">
+        <div class="imgScale icon100 iconEcoFriendlyW" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: white">
+          <h2 style="margin-bottom: 10px;"><b>Eco-Friendly</b></h2>
+          <h4>WITH GREEN TRAVEL</h4>
+        </div>
+      </div>
+      <div class="horizontalRight">
+        <hr class="hrwhite">
+      </div>
+    </div>
+    <div class="featureOuterContainer Grid Grid--cols-2" style="padding: 0 10vw 0 10vw;">
+      <div class="Grid-cell imgScale featureEcoFriendly">
+        <div class="featureInnenContainerUp" style="min-height : 60vh; margin: 0;">
+          <div class="featureContentTitle"><h2></h2></div>
+          <div class="featureContent"><p></p></div>
+        </div>
+      </div>
+      <div class="Grid-cell imgScale ">
+        <div class="featureInnenContainerDown" style="min-height : 60vh; margin: 0;">
+          <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
+          <div class="featureContent"><p>All necessary functionalities of the sophisticated CONVIEN are included in the CONVIEN EASY version. Your data is stored in a cloud safeguarding a permanent availability for the manager and all travelers involved in the organization of a meeting. Thus using CONVIEN EASY allows you to arrange travels and meetings and cut down on the Total-Cost-of-Travel up to 30% with a smart system.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="modal" id="Security">
+  <div class="imgScale iconMenuClose icon40" onclick="closeSecurity()"></div>
+  <div class="featureModalContainer" style="background-color: var(--convienBlue);">
+    <div class="featureTitleContainer" >
+      <div class="horizontalLeft" style="width: 10vw;">
+        <hr class="hrwhite">
+      </div>
+      <div class="titleContainer">
+        <div class="imgScale icon100 iconSecurityW" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: white">
+          <h2 style="margin-bottom: 10px;"><b>Ensure</b></h2>
+          <h4>COMPLIANCE WITH YOUR CORPORATE TRAVEL POLICIES</h4>
+        </div>
+      </div>
+      <div class="horizontalRight">
+        <hr class="hrwhite">
+      </div>
+    </div>
+    <div class="featureOuterContainer Grid Grid--cols-2" style="padding: 0 10vw 0 10vw;">
+      <div class="Grid-cell imgScale ">
+        <div class="featureInnenContainerUp" style="min-height : 60vh; margin: 0;">
+          <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
+          <div class="featureContent"><p>All necessary functionalities of the sophisticated CONVIEN are included in the CONVIEN EASY version. Your data is stored in a cloud safeguarding a permanent availability for the manager and all travelers involved in the organization of a meeting. Thus using CONVIEN EASY allows you to arrange travels and meetings and cut down on the Total-Cost-of-Travel up to 30% with a smart system.</p></div>
+        </div>
+      </div>
+      <div class="Grid-cell imgScale featureSecurity">
+        <div class="featureInnenContainerDown" style="min-height : 60vh; margin: 0;">
+          <div class="featureContentTitle"><h2></h2></div>
+          <div class="featureContent"><p></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+</div>
+<div class="contentContainer alignCenter">
+  <h1 class="contentTitle">
+    your corporate travel management</h1>
   <h2 class="contentSubtitle">Take off for the next level of travel management</h2>
   <div class="featureContainerCenter">
 
@@ -91,31 +286,39 @@
       </div>
       
     
-      <a href="page.contact.linkto" class="tooltip imgScale iconRequestY icon100">
-        <span class="tooltiptext"><b>ORDER IT NOW</b><br/></span>
-      </a>
+    <a href="">
+      <div class="contactBtn">
+        <div class="imgScale iconRequestY icon100"></div>
+        <div class="contactBtnText">
+          <h4><span></span></h4>
+          <h4><span><b>ORDER</b></span></h4>
+          <h4><span>IT NOW</span></h4>
+        </div>
+      </div>
+    </a>
 
   </div>
 </div>
 
-
-  <div id="MoneySaving" class="featureContainer">
+<div class="featureBanner">
+  
+    <div id="MoneySaving" class="featureContainer" style="background-color: var(--convienYellow);">
   <div class="featureTitleContainer">
     <div class="horizontalLeft">
-        <hr class="hr" style="color: var(--convienYellow)">
+        <hr class="hrwhite">
     </div>
     <div class="titleContainer">
-        <div class="imgScale icon100 iconMoneySaving" style="margin: 0; min-width: 80px;"></div>
-        <div class="titleTextContainer" style="color: var(--convienYellow)">
+        <div class="imgScale icon100 iconMoneySavingW" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: white">
             <h2 style="margin-bottom: 10px;"><b>Economize</b></h2>
             <h4>YOUR TOTAL COST OF TRAVEL</h4>
         </div>
     </div>
     <div class="horizontalRight">
-        <hr class="hr" style="color: var(--convienYellow)">
+        <hr class="hrwhite">
     </div>
   </div>
-  <div class="featureOuterContainer Grid Grid--cols-2" style="background-color: var(--convienYellow);">
+  <div class="featureOuterContainer Grid Grid--cols-2">
     <div class="Grid-cell imgScale featureMoneySaving">
       <div class="featureInnenContainerUp">
         <div class="featureContentTitle"><h2></h2></div>
@@ -131,24 +334,24 @@
   </div>
 </div>
 
-
-  <div id="TravelInfo" class="featureContainer">
+  
+    <div id="TravelInfo" class="featureContainer" style="background-color: var(--darkGrey);">
   <div class="featureTitleContainer">
     <div class="horizontalLeft">
-        <hr class="hr" style="color: var(--darkGrey)">
+        <hr class="hrwhite">
     </div>
     <div class="titleContainer">
-        <div class="imgScale icon100 iconTravelInfo" style="margin: 0; min-width: 80px;"></div>
-        <div class="titleTextContainer" style="color: var(--darkGrey)">
+        <div class="imgScale icon100 iconTravelInfoW" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: white">
             <h2 style="margin-bottom: 10px;"><b>Manage</b></h2>
             <h4>YOUR TRAVEL SMARTLY</h4>
         </div>
     </div>
     <div class="horizontalRight">
-        <hr class="hr" style="color: var(--darkGrey)">
+        <hr class="hrwhite">
     </div>
   </div>
-  <div class="featureOuterContainer Grid Grid--cols-2" style="background-color: var(--darkGrey);">
+  <div class="featureOuterContainer Grid Grid--cols-2">
     <div class="Grid-cell imgScale ">
       <div class="featureInnenContainerUp">
         <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
@@ -164,24 +367,24 @@
   </div>
 </div>
 
-
-  <div id="Meeting" class="featureContainer">
+  
+    <div id="Meeting" class="featureContainer" style="background-color: var(--convienRed);">
   <div class="featureTitleContainer">
     <div class="horizontalLeft">
-        <hr class="hr" style="color: var(--convienRed)">
+        <hr class="hrwhite">
     </div>
     <div class="titleContainer">
-        <div class="imgScale icon100 iconMeeting" style="margin: 0; min-width: 80px;"></div>
-        <div class="titleTextContainer" style="color: var(--convienRed)">
+        <div class="imgScale icon100 iconMeetingW" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: white">
             <h2 style="margin-bottom: 10px;"><b>Ease</b></h2>
             <h4>YOUR MEETING ARRANGEMENTS</h4>
         </div>
     </div>
     <div class="horizontalRight">
-        <hr class="hr" style="color: var(--convienRed)">
+        <hr class="hrwhite">
     </div>
   </div>
-  <div class="featureOuterContainer Grid Grid--cols-2" style="background-color: var(--convienRed);">
+  <div class="featureOuterContainer Grid Grid--cols-2">
     <div class="Grid-cell imgScale featureMeeting">
       <div class="featureInnenContainerUp">
         <div class="featureContentTitle"><h2></h2></div>
@@ -197,24 +400,24 @@
   </div>
 </div>
 
-
-  <div id="EcoFriendly" class="featureContainer">
+  
+    <div id="EcoFriendly" class="featureContainer" style="background-color: var(--convienGreen);">
   <div class="featureTitleContainer">
     <div class="horizontalLeft">
-        <hr class="hr" style="color: var(--convienGreen)">
+        <hr class="hrwhite">
     </div>
     <div class="titleContainer">
-        <div class="imgScale icon100 iconEcoFriendly" style="margin: 0; min-width: 80px;"></div>
-        <div class="titleTextContainer" style="color: var(--convienGreen)">
+        <div class="imgScale icon100 iconEcoFriendlyW" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: white">
             <h2 style="margin-bottom: 10px;"><b>Eco-Friendly</b></h2>
             <h4>WITH GREEN TRAVEL</h4>
         </div>
     </div>
     <div class="horizontalRight">
-        <hr class="hr" style="color: var(--convienGreen)">
+        <hr class="hrwhite">
     </div>
   </div>
-  <div class="featureOuterContainer Grid Grid--cols-2" style="background-color: var(--convienGreen);">
+  <div class="featureOuterContainer Grid Grid--cols-2">
     <div class="Grid-cell imgScale featureEcoFriendly">
       <div class="featureInnenContainerUp">
         <div class="featureContentTitle"><h2></h2></div>
@@ -230,24 +433,24 @@
   </div>
 </div>
 
-
-  <div id="Security" class="featureContainer">
+  
+    <div id="Security" class="featureContainer" style="background-color: var(--convienBlue);">
   <div class="featureTitleContainer">
     <div class="horizontalLeft">
-        <hr class="hr" style="color: var(--convienBlue)">
+        <hr class="hrwhite">
     </div>
     <div class="titleContainer">
-        <div class="imgScale icon100 iconSecurity" style="margin: 0; min-width: 80px;"></div>
-        <div class="titleTextContainer" style="color: var(--convienBlue)">
+        <div class="imgScale icon100 iconSecurityW" style="margin: 0; min-width: 80px;"></div>
+        <div class="titleTextContainer" style="color: white">
             <h2 style="margin-bottom: 10px;"><b>Ensure</b></h2>
             <h4>COMPLIANCE WITH YOUR CORPORATE TRAVEL POLICIES</h4>
         </div>
     </div>
     <div class="horizontalRight">
-        <hr class="hr" style="color: var(--convienBlue)">
+        <hr class="hrwhite">
     </div>
   </div>
-  <div class="featureOuterContainer Grid Grid--cols-2" style="background-color: var(--convienBlue);">
+  <div class="featureOuterContainer Grid Grid--cols-2">
     <div class="Grid-cell imgScale ">
       <div class="featureInnenContainerUp">
         <div class="featureContentTitle"><h2>Cutting down on Total-Cost-of-Travel easily</h2></div>
@@ -263,7 +466,8 @@
   </div>
 </div>
 
-
+  
+</div>
 
     <div>
 
